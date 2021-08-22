@@ -1,6 +1,6 @@
 {
   "name": "todos-frontend",
-  "homepage": "https://rcj1.github.io/todos/",
+  "homepage": "https://rcj1.github.io/todos/#/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
