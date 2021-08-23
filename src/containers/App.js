@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Favicon from 'react-favicon'
 import { Switch, Route, Redirect} from 'react-router-dom';
 import Signout from '../components/Signout';
 import Signin from '../components/Signin';
@@ -94,6 +95,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Favicon url='https://raw.githubusercontent.com/rcj1/todos/master/public/favicon.ico' />
         <Switch>
           <Route exact path="/">
             {this.state.signedin ? <Redirect to="/signedin"/> : <Signin onLoadUser={this.onLoadUser}/>}
@@ -102,6 +104,7 @@ class App extends Component {
             {this.state.signedin ? <Redirect to="/signedin"/> : <Register onLoadUser={this.onLoadUser}/>}
           </Route>
           <Route path="/signedin">
+            {!this.state.signedin ? <Redirect to="/"/> :
             <div>
               <Signout onSignout={this.onSignout}/>
               <Header name={this.state.user.name} number={this.state.user.todos.length}/>
@@ -109,7 +112,7 @@ class App extends Component {
               onDateChange={this.onDateChange}
               onAddTask={this.onAddTask}/>
               <Chores choreList={this.state.user.todos} onDone={this.onDone}/>
-            </div>
+            </div>}
           </Route>
         </Switch>
       </div>

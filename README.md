@@ -1,3 +1,14 @@
+## Usage
+This website creates an easy-to-read personal todo list. Simply register with your name, email, and password and start adding tasks. When you're done with them, check them off.
+### Application
+This website is not a replacement for your digital calendar. It does not track the time of day, so it won't remind you to take a call at 9 am on Tuesday or go to the doctor at 1 pm on Saturday. Instead, it is a digital version of the paper todo list. It is ideal for tracking those things that you need or want to get done by a certain day, such as getting your oil change or buying a new pair of shoes.
+
+The color code and layout make it easy to find your priorities. Tasks are listed from most to leasat urgent. Tasks within the next day appear in red, those within the next week appear in yellow, and everything else appears in green.
+### Code
+This website uses React for the frontend, NodeJS + Express for the server, and PostgreSQL for the database. Credentials are encrypted with bcrypt.
+### What's next?
+Push notifications and mobile app!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
