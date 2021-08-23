@@ -9,6 +9,9 @@ This website uses React for the frontend, NodeJS + Express for the server, and P
 ### What's next?
 Push notifications and mobile app!
 
+### Footnote
+Please be patient if you need a few seconds to register or sign in. The backend is hosted for free on Heroku, and this creates a lag when the app goes dormant.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
